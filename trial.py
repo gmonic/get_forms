@@ -13,17 +13,6 @@ csrf = CSRFProtect(app)
 
 
 
-consumer_key = "XL5IFsytTIGvj5wMLj8C0XGBD"
-consumer_secret = "USGzGWlCrOSBUTLZtByqrs4mxuJVyASyMgh1Yp3ENPh64DrTSA"
-access_token = "1062100134253727745-0Jcw1uQQUDuP1kWPwVzpDmJtGa3VNR"
-access_token_secret = "zLSC546FFCexMgUaYgUR5QVqCFn1sZaYxT3gG0LKn5kKc"
-app.config['SECRET_KEY']="fdfoicn"
-WTF_CSRF_SECRET_KEY="qazwsxedc"
-
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-
-api = tweepy.API(auth)
 
 #create form 1
 class Form1(FlaskForm):
